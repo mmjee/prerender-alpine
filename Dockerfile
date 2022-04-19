@@ -11,6 +11,7 @@ USER node
 WORKDIR "/home/node"
 
 COPY ./package.json .
+COPY ./package-lock.json .
 COPY ./server.js .
 
 # install npm packages
