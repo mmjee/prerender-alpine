@@ -5,7 +5,7 @@ ENV CHROME_PATH=/usr/lib/chromium/
 ENV MEMORY_CACHE=0
 
 # install chromium, tini and clear cache
-RUN apk add --no-cache chromium tini
+RUN apk add --no-cache chromium tini icu-data-full
 
 USER node
 WORKDIR "/home/node"
